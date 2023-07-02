@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+        <h1><img align="left" src="https://SKPointon.github.io/logos/???" height=50px><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+        <hr />
+        <div class="container">
+        {% assign doclist = site.data.navigation.docs | sort: 'title'  %}
+          <div class="content">
+          {% for item in doclist %}
+              <a href="{{site.baseUrl}}{{ item.url }}"><h3>{{ item.title }}</h3></a>
+          {% endfor %}
+          </div>
+        </div>
+        <hr />
+
+        {{ content }}
+
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
+
+<style>
+	.column {
+	  float: left;
+	  width: 25%;
+	}
+	.columnG {
+	  float: left;
+	  width: 5%;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.image {
+		padding: 10px;
+	}
+	
+	@media screen and (max-width: 600px) {
+	  .column {
+		width: 100%;
+	  }
+	}
+
+  div.container {
+    height:20px;
+    overflow: hidden;
+    margin: 15px 0px;
+    padding:5px 10px 5px 10px;
+    white-space: nowrap;  
+  }
+     
+  div.content{
+    width:100%;
+    float:left;
+    display:inline;
+  }
+     
+  div.content a {
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:center;
+  }
+  
+  div.content a:hover {
+    background-color:#3785c4;
+    color:#fff;
+    text-decoration:none;
+  }
+</style>

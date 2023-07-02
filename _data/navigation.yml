@@ -1,0 +1,11 @@
+# Belongs at: /_data/navigation.yml
+
+docs:
+- title: Writing
+  url: /docs/writing.html
+
+- title: Poems
+  url: /docs/poems.html
+
+- title: Blog
+  url: /docs/blog.html
