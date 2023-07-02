@@ -32,7 +32,9 @@ plugins:
   - jekyll-remote-theme
 
 collections:
-  poems:
+  writing:
+    output: true
+  blog:
     output: true
   
 
