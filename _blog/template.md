@@ -1,5 +1,5 @@
 ---
-layout: { blog }
+layout: blog
 title: "title of post"
 subtitle: ""
 topics:
@@ -7,3 +7,5 @@ topics:
     - "topic 2"
 date: "01-07-2023"
 ---
+
+First

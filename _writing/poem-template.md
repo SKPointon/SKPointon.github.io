@@ -1,5 +1,5 @@
 ---
-layout: { poem-item | story-item }
+layout: item
 type: poem
 title: "title of poem"
 subtitle: ""
