@@ -23,7 +23,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog to showcase my work 
 baseurl: /
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "pages-themes/minima@v2.5.1"
 twitter_username: skpointon
 github_username:  SKPointon
 
