@@ -11,7 +11,7 @@ title: Blog
 	{% for blog in sorted_array %}
     <div class="gallery-item">
     <h3><p class="gallery-item__title">{{ event.title }}</p></h3>
-        <p>Starting: {{ blog.date | date: "%d-%m-%Y" }} @ {{ blog.start_time }}</p>
+        <p>Starting: {{ blog.date | date: "%d-%m-%Y" }}</p>
         <p class="gallery-item__text">Description: {{ blog.subtitle }}</p>
         <p class="gallery-item__text">Topic: {{ blog.topics }}</p>
         <a href="{{ blog.url }}">

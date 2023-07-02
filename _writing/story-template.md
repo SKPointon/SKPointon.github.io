@@ -1,7 +1,9 @@
 ---
 layout: item
 type: story
-title: "title of poem"
-subtitle: ""
+title: "Test Story"
+subtitle: "Testing"
 date: "01-07-2023"
 ---
+
+Once upon a time...
